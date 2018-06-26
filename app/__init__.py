@@ -1,5 +1,6 @@
 from flask import Flask
 
-name = "HW app"
-app = Flask(name)
+app = Flask('HW')
+app.config.from_object('config')
+
 from app import views
